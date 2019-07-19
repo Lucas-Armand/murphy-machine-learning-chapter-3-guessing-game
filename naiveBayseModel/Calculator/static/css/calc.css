@@ -1,0 +1,23 @@
+table{
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+textarea{
+	display: block;
+ 	margin-bottom: 8px;
+ 	margin-left:auto; 
+    margin-right:auto;
+    color:silver; // cor inicial para diferenciar valor input de valor guess
+    border-radius: 5px;
+ }
+
+ button_reset{
+ 	height: 40px;
+ 	width: 80px;
+ }
+
+ button{
+ 	height: 40px;
+ 	width: 40px;
+ }
