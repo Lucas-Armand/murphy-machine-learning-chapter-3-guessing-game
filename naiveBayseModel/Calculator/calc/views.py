@@ -30,15 +30,21 @@ def index(request):
         print(model.posteriors(dados))
         print("")
 
-        if len(dados)<5:
+        if len(dados)<3:
             guess = ""
         else:
             guess = str(model.guess(dados));
 
+        if len(dados)<5:
+            isReportReady = False
+        else:
+            isReportReady = True
+
         if dados[-1] != 0:
             # Retornando dados com entradas:
             return render(request,'index.html',{"dados":str(form)[2:-2],
-                                                "guess":guess})
+                                                "guess":guess,
+                                                "reportFlag": isReportReady})
 
     # Lidando com o primeiro acesso do usuário:
     return render(request, 'index.html')

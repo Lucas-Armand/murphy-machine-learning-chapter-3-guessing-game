@@ -3,21 +3,43 @@ table{
     margin-right:auto;
 }
 
+.btn{
+	display:block;
+}
+
 textarea{
 	display: block;
- 	margin-bottom: 8px;
+ 	margin-bottom: 2px;
  	margin-left:auto; 
     margin-right:auto;
-    color:silver; // cor inicial para diferenciar valor input de valor guess
+    color:silver; // cor inicial para diferenciar valor input de valor "guess"
     border-radius: 5px;
- }
+}
 
- button_reset{
- 	height: 40px;
+
+button_reset{
  	width: 80px;
- }
+}
 
- button{
+button{
  	height: 40px;
  	width: 40px;
- }
+}
+
+button_report{
+	background-color: #4CAF50;
+	color: white;
+}
+
+p.title{
+    font-size: 24px;
+}
+
+p.subtitle{
+    font-size: 18px;
+}
+
+p.text {
+    font-size: 14px;
+}
+
